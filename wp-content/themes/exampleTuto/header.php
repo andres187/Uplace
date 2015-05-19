@@ -12,7 +12,7 @@
 <div class="container">
 
 <header class="site-header">
-	<h1><img src="logo.png"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+	<h1><img src="http://localhost/wordpress/wp-content/uploads/2015/05/logo.png" /><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 	<h5><?php bloginfo('description'); ?></h5>		
 
 	<nav class="site-nav">
