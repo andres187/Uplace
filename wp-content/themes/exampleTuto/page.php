@@ -4,6 +4,8 @@ get_header();
 
 if (have_posts()) :
 	while (have_posts()) : the_post(); ?>
+
+
 		<article class="post page">
 		<h2>
 		<?php 

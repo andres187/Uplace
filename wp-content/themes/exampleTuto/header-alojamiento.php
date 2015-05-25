@@ -13,8 +13,8 @@
 
 <header class="site-header">
 	<h1><img src="http://localhost/wordpress/wp-content/uploads/2015/05/logo.png" /><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-	<h5><?php bloginfo('description'); ?><?php if (is_page('especificaciones')) {
-		echo " - Tu estas aqui en especificaciones";
+	<h5><?php bloginfo('description'); ?><?php if (is_page('alojamiento')) {
+		echo " - Tu estas aqui en alojamiento template 2";
 	}?></h5>		
 
 	<nav class="site-nav">

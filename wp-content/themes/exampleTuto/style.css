@@ -1,4 +1,17 @@
-body {
+/* 
+Theme Name: UplaceTuto
+autor: Andres Bolivar
+Version: 0
+*/
+
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {	
+	padding: 0;
+	margin: 0;
 	font-family: Arial, sans-serif;
 	font-size: 14px;
 	color: #333;
@@ -11,6 +24,12 @@ a:visited {
 
 p {
 	line-height: 1.65em;
+	margin: 0 0 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0 0 1em 0;
+	font-weight: normal;
 }
 
 div.container {
@@ -21,7 +40,8 @@ div.container {
 }
 
 article.post{
-	border-bottom: 2px dotted #bbbbbb;
+	border-bottom: 1px dotted #DDD;
+	margin-bottom: 20px;
 }
 
 article.post:last-of-type {
@@ -29,13 +49,11 @@ article.post:last-of-type {
 }
 
 .site-header {
-	border-bottom: 2px solid #999;
+	border-bottom: 2px solid #DDD;
+	margin-bottom: 20px;
+	padding: 30px 0 0 0;
 }
 
-.site-footer{
-	margin-top: 30px;
-	border-top: 2px solid #999;
-}
 
 /* Nav */
 .site-nav ul {
@@ -56,16 +74,24 @@ article.post:last-of-type {
 	float: right;
 }
 
+.site-nav ul li a:link,
+.site-nav ul li a:visited {
+	display: block;
+}
+
 /* Menu header */
+.site-header nav {
+	margin-top: 30px;
+} 
+
 .site-header nav ul li {
-	margin-right: 0;
+	margin-right: 2px;
 }
 
 .site-header nav ul li a:link,
 .site-header nav ul li a:visited {
-	display: block;
 	padding: 10px 18px;
-	border: 1px solid #BBB;
+	border: 1px solid #DDD;
 	border-bottom: none;
 	text-decoration: none;
 
@@ -76,19 +102,103 @@ article.post:last-of-type {
 }
 
 .site-header nav ul li.current-menu-item a:link,
-.site-header nav ul li.current-menu-item a:visited {
+.site-header nav ul li.current-menu-item a:visited, 
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited{
+	font-weight: bold;
 	background-color: #006ec3;
 	color: #FFF;
 }
 
 /* Menu Pie */
+.site-footer {
+	margin-top: 30px;
+	border-top: 1px solid #DDD;
+	font-size: 84%;
+}
+
 .site-footer nav ul li{
 	margin-right: 10px;
 	padding-right: 10px;
 	border-right: 1px dotted #BBB;
 }
 
+.site-footer nav ul li:last-of-type {
+	border-right: none;
+}
 /* post page*/
 article.page h2 {
-	font-size: 300%;
+	font-size: 225%;
+	margin-bottom: 15px;
 }		
+
+/* Clearfix */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* Dos columnas  alojamiento */
+
+div.title-column {
+	width: 30%;
+	float: left;
+}	
+
+div.text-column {
+	width: 70%;
+	float: right;
+}
+
+/* Estilo Info Box */
+div.info-box{
+	width: 30%;
+	float: right;
+	margin: 0 0 30px 30px;
+	padding: 20px;
+	background-color: #EEE;
+}
+
+div.info-box h4{
+	margin-bottom: 6px;
+}
+
+div.info-box p{
+	font-size: 85%;
+}
+
+/* Children links */
+
+.children-links {
+	margin-bottom: 20px;
+	font-size: 80%;
+}
+
+.children-links a:link,
+.children-links a:visited {
+	text-decoration: none;
+}
+
+.children-links li {
+	margin-right: 20px;
+}
+
+.children-links .parent-link {
+	float: left;
+	margin-right: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #DDD;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited {
+	color: #333;
+}
+
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited{
+	border-bottom: 1px solid #DDD;
+	color: #333;
+	cursor: default;
+}

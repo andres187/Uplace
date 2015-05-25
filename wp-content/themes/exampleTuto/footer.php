@@ -8,10 +8,9 @@
 	?>
 
 		<?php wp_nav_menu( $args ); ?>
-
-		<a href="http://www.instagram.com/uplace.co" target="_blank"> Instagram</a>
-		<a href="http://www.twitter.com/uplace.co" target="_blank"> Twitter -- </a>
-		<a href="http://www.facebook.com/uplace.co" target="_blank"> Facebook -- </a>
+		<a href="http://www.instagram.com/uplace.co" target="_blank">  <i class="wp-svg-instagram instagram"></i></a>
+		<a href="http://www.twitter.com/uplace.co" target="_blank"> <i class="wp-svg-twitter twitter"></i>   </a>
+		<a href="http://www.facebook.com/uplace.co" target="_blank"> <i class="wp-svg-facebook facebook"></i>   </a>
 	</nav>
 
 	<p><?php bloginfo('name'); ?> - &copy; <?php echo date('Y');?></p>
