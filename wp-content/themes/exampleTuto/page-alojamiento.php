@@ -13,7 +13,7 @@ if (have_posts()) :
 
 		<nav class="site-nav children-links clearfix">
 
-		<span class="parent-link"><a href="<?php echo get_the_permalink(get_top_ancestor_id()); ?>"><?php echo get_the_title(get_top_ancestor_id()); ?>(AQUI IRIA ID DE LA CASA)</a></span>
+		<span class="parent-link"><a href="<?php echo get_the_permalink(get_top_ancestor_id()); ?>"><?php echo get_the_title(get_top_ancestor_id()); ?>(Ua0011)</a></span>
 			
 			<ul>
 			<?php 
@@ -39,6 +39,12 @@ if (have_posts()) :
 			</div>
 
 		</div>
+		
+			<div class="slider">
+				 <?php 
+    echo do_shortcode("[metaslider id=67]"); 
+?>
+			</div>
 
 		</article>
 	<?php

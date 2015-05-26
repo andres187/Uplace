@@ -80,6 +80,42 @@ article.post:last-of-type {
 }
 
 /* Menu header */
+.Header{
+  margin-top: 0em;
+  background-image: url('http://localhost/wordpress/wp-content/uploads/2015/05/portada.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 1.2em 0;
+  height: 500px;
+}
+
+.Header-imageContainer{
+  margin: 0;
+}
+
+.Header-image{
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.Header-name{
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+
+.Header-link{
+  color: white;
+  font-size: 2.2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/* site Header */
 .site-header nav {
 	margin-top: 30px;
 } 
@@ -201,4 +237,10 @@ div.info-box p{
 	border-bottom: 1px solid #DDD;
 	color: #333;
 	cursor: default;
+}
+
+/* Slider */
+
+div.slider {
+	margin-bottom: 5em;
 }
